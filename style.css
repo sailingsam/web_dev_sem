@@ -1,0 +1,93 @@
+*{
+    padding: 0px;
+    border-radius: 0px;
+    margin: 0px;
+
+}
+body{
+    background-color: rgb(234, 239, 245);
+}
+.nav_bar{
+    border-color: rgb(165, 61, 61);
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #ffffff;
+    align-items: center;
+    border-radius: 1px;
+    border-color: rgb(165, 61, 61);
+}
+.nav_bar .sstlogo{
+    padding-left: 100px;
+}
+.nav_bar .sociallogo{
+    padding-right: 100px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left-container{
+    margin-top: 30vh;
+    width: 60vw;
+}
+.typebox{
+    display: flex;
+    border: 2px;
+    border-color: rgb(156, 18, 18);
+    height: 10vh;
+    width: 20vw;
+    /* background-color: #ffffff; */
+}
+.typebox input{
+    height: 140px;
+}
+.postbox button{
+    background-color: blue;
+    border-radius: 30px;
+    padding: 10px;
+    width: 80px;
+    margin-left:150px;
+    margin-top: 100px;
+    /* border: 100px; */
+    border-color: rgb(0, 0, 0);
+    transition: background-color 0.3s;
+}
+.postbox button:hover{
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 10px;
+    width: 80px;
+    margin-left:150px;
+    margin-top: 100px;
+    /* border: 100px; */
+    border-color: rgb(0, 0, 0);
+}
+.right-section{
+    width: 40vw;
+}
+.right-section .commentbox{
+    width: 30vw;
+    margin-top: 30px;
+    overflow-y:scroll;
+    background-color: #fff;
+}
+.icons{
+    margin-top: 100px;
+    width: 10px;
+    height: 50px;
+}
+.right-section .commentbox{
+    position: relative;
+    height: 20vh;
+}
+.right-section img{
+    /* position: fixed; */
+    position:fixed;
+    width: 40px;
+}
+.right-section .commentbox p{
+    margin-left: 7vw;
+}
