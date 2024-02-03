@@ -1,93 +1,108 @@
-*{
-    padding: 0px;
-    border-radius: 0px;
-    margin: 0px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    margin: 0; /* Remove default margin */
 }
-body{
-    background-color: rgb(234, 239, 245);
-}
-.nav_bar{
-    border-color: rgb(165, 61, 61);
+.nav_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Adjust the z-index as needed */
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    align-items: center;
     background-color: #ffffff;
-    align-items: center;
-    border-radius: 1px;
-    border-color: rgb(165, 61, 61);
+    padding: 10px 5%; /* Add 5% padding on left and right */
 }
-.nav_bar .sstlogo{
-    padding-left: 100px;
+
+.nav_logo img {
+    max-height: 40px;
 }
-.nav_bar .sociallogo{
-    padding-right: 100px;
-}
-.container{
+
+.container {
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    margin: 20px;
+    height: 100%;
 }
-.left-container{
-    margin-top: 30vh;
-    width: 60vw;
-}
-.typebox{
+
+.left-container {
+    width: 60%;
+    background-color: #cfe2f1; /* Slightly whitish blue background */
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto; /* Add overflow-y to enable scrolling if content exceeds height */
     display: flex;
-    border: 2px;
-    border-color: rgb(156, 18, 18);
-    height: 10vh;
-    width: 20vw;
-    /* background-color: #ffffff; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.typebox input{
-    height: 140px;
+
+
+.right-section {
+    width: 40%;
+    height: 100%;
 }
-.postbox button{
-    background-color: blue;
-    border-radius: 30px;
-    padding: 10px;
-    width: 80px;
-    margin-left:150px;
-    margin-top: 100px;
-    /* border: 100px; */
-    border-color: rgb(0, 0, 0);
-    transition: background-color 0.3s;
+
+.tweet-card {
+    width: 521px;
+    height: 220px;
+    background-color: #fff; 
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.postbox button:hover{
-    background-color: blue;
-    color: #ffffff;
-    border-radius: 30px;
-    padding: 10px;
-    width: 80px;
-    margin-left:150px;
-    margin-top: 100px;
-    /* border: 100px; */
-    border-color: rgb(0, 0, 0);
+
+.top-container {
+    display: flex;
+    align-items: flex-start;
+    height: 80%;
 }
-.right-section{
-    width: 40vw;
-}
-.right-section .commentbox{
-    width: 30vw;
-    margin-top: 30px;
-    overflow-y:scroll;
-    background-color: #fff;
-}
-.icons{
-    margin-top: 100px;
-    width: 10px;
+
+.user-photo img {
+    width: 50px;
     height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
-.right-section .commentbox{
-    position: relative;
-    height: 20vh;
+.thoughts-input textarea {
+    height: 126px;
+    width: 413px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+    font-size: 16px;
+    resize: none;
+    margin-top: 10px;
 }
-.right-section img{
-    /* position: fixed; */
-    position:fixed;
-    width: 40px;
+.bottom-container {
+    display: flex;
+    height: 20%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; 
 }
-.right-section .commentbox p{
-    margin-left: 7vw;
+
+.letter-count p {
+    color: #333; 
+}
+
+.post-button button {
+    background-color: blue;
+    border-radius: 20px;
+    padding: 8px 16px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
